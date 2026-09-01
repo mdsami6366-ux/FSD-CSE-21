@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const userName = "SAMI";
+      const password = 1234;
+
+      function entry() {
+        const enteredName = prompt("enter your name");
+        const enteredPassword = prompt("enter your password");
+
+        return { enteredName, enteredPassword };
+      }
+
+      function match(credentials, msg) {
+        if (
+          userName === credentials.enteredName &&
+          password == credentials.enteredPassword
+        ) {
+          document.write("helloworld");
+        } else {
+          document.write("enter correct username and password");
+        }
+        document.write(msg);
+      }
+
+      const userInput = entry();
+      match(userInput, " code completed");
+    </script>
+  </body>
+</html>
