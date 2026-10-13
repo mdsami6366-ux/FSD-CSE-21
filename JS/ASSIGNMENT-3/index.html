@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+      <div class="mainContainer">main 
+        <div class="header">
+            <div class="logo"><img  height="50px" width="50px" src="logo.jpg" alt="logo"></div>
+            <div class="heading"><h1>BUS BOOKING SYSTEM</h1></div>
+        </div>
+        <div class="info"><h3>USER INFORMATION</h3></div>
+         <table>
+                <form>
+                    <tr>
+                        <td>User Name</td>
+                        <td><input type="text" id="username" name="username"></td>
+                    </tr>
+                    <tr>
+                        <td>User Age</td>
+                        <td><input type="number" id="userage" name="userage"></td>
+                    </tr>
+                    <tr>
+                        <td>User Aadhar Number</td>
+                        <td><input type="number" id="useraadhar" name="useraadhar"></td>
+                    </tr>
+                    <tr>
+                        <td>Select your City</td>
+                        <td>
+                            <select name="city" id="city">
+                                <option value="delhi">Delhi</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="kolkata">Kolkata</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="ghaziabad">Ghaziabad</option>
+                            </select>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <td>Journey Date</td>
+                        <td><input type="date" id="journeydate" name="journeydate"></td>
+                    </tr>
+
+                </form>
+            </table>
+
+            <div class="busInfo"><h3>BUS INFORMATION</h3></div>
+
+            
+            <table>
+                <form class="busform">
+                    <tr>
+                        <td><input type="radio" name="bus" value="ac"> AC Bus 2000</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="bus" value="non-ac">Non AC Bus 2000</td>
+                    </tr>
+                    <tr>
+                        <td>Select your Seat</td>
+                        <td>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option> 
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+           <div class="submitbutton">
+            <button onclick="submit()">Submit</button>
+           </div>
+
+        </div>
+
+</body>
+</html>

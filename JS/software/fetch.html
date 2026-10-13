@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY SHOP</title>
+
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            border: 2px solid rgb(51, 231, 254);
+            border-radius: 20px;
+            padding: 10px;
+            text-align: center;
+            height: 350px;
+        }
+
+        .card img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="data"></div>
+
+    <script src="fetch.js"></script>
+
+</body>
+</html>
